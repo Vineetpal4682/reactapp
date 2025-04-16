@@ -7,9 +7,8 @@ import About from './components/About';
 import React,{useState} from 'react'
 import Alert from './components/Alert';
 
-// import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom";
+// import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 
-let name= "vineet";
 function App() 
 {
   const [mode, setMode] = useState('light');
@@ -46,8 +45,8 @@ function App()
 {/* <Router> */}
   <Navbar tname="My First App" mode={mode} toggelMode={toggelModef}/>
   <Alert alert={alertmessage}/>
-  <div className="container">   
   <Firstform textHeadding = "Enter The Text" setAlert={setAlert}/>
+  <div className="container">   
     {/* <Routes>
     <Route path="/" element={<Firstform textHeadding = "Enter The Text" setAlert={setAlert}/>} />
     <Route path="/about" element={<About title='About Us'/>} />

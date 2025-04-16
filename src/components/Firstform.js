@@ -26,8 +26,7 @@ export default function Firstform(props)
         console.log('makeuptext'); 
          setTextVar(event.target.value); 
            
-      }
-    
+      }    
   return (
     <>
   <div className="container">     
@@ -38,7 +37,7 @@ export default function Firstform(props)
       </div>  
       <button className="btn btn-primary mx-1" onClick={makeup}>Convert Upper</button>  
       <button className="btn btn-primary mx-1" onClick={makeLower}>Convert Lower</button>
-      <button className="btn btn-primary mx-1" onClick={makeClear}>Convert Lower</button>  
+      <button className="btn btn-primary mx-1" onClick={makeClear}>Clear</button>  
   </div>
  <div className="container my-5">
   <h1>Type Summary</h1>
